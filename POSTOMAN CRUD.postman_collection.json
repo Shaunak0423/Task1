@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "4c4acb47-8cad-47e4-9a8a-d640b89e43c3",
+		"name": "POSTOMAN CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29142815"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"info\": {\r\n\t\t\"_postman_id\": \"e7b01453-8b2d-438d-b3e6-6017a90310ac\",\r\n\t\t\"name\": \"TODO API\",\r\n\t\t\"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\",\r\n\t\t\"_exporter_id\": \"29178403\"\r\n\t},\r\n\r\n\"item\": [\r\n\t\t{\r\n\t\t\t\"name\": \"View all tasks\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"GET\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:3500/tasks\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"3500\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tasks\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"response\": []\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"Add new task\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"POST\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"body\": {\r\n\t\t\t\t\t\"mode\": \"raw\",\r\n\t\t\t\t\t\"raw\": \"{\\r\\n  \\\"task\\\": \\\"Buy groceries\\\"\\r\\n}\\r\\n\",\r\n\t\t\t\t\t\"options\": {\r\n\t\t\t\t\t\t\"raw\": {\r\n\t\t\t\t\t\t\t\"language\": \"json\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t},\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:3000/tasks\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"3500\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tasks\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"response\": []\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"Modify Task\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"PUT\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"body\": {\r\n\t\t\t\t\t\"mode\": \"raw\",\r\n\t\t\t\t\t\"raw\": \"{\\r\\n  \\\"task\\\": \\\"Buy groceries and milk\\\",\\r\\n  \\\"is_completed\\\": true\\r\\n}\\r\\n\",\r\n\t\t\t\t\t\"options\": {\r\n\t\t\t\t\t\t\"raw\": {\r\n\t\t\t\t\t\t\t\"language\": \"json\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t},\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:3000/tasks/1\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"3500\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tasks\",\r\n\t\t\t\t\t\t\"1\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"response\": []\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"DELETE\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"DELETE\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:3000/tasks/1\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"3500\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tasks\",\r\n\t\t\t\t\t\t\"1\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"response\": []\r\n\t\t}\r\n\t]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3500/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
